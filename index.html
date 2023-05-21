@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penshoppe</title>
+  <style>
+    /* sonic.css */
+
+    body {
+      margin: 0;
+    }
+
+    .penshoppe {
+      font-family: monospace;
+      position: absolute;
+      top: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 2rem;
+      padding: 1% 0;
+      letter-spacing: 0.4rem;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .top-banner {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 5px 0;
+      margin: 0;
+    }
+
+    .banner-text {
+      font-size: 0.9rem;
+      text-align: center;
+      font-family: monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .currency {
+      font-weight: bold;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-container img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px; /* Set the width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: black; /* Set the background color of the scrollbar track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: lightgray; /* Set the color of the scrollbar thumb */
+    }
+
+    .shop-now-button {
+      position: absolute;
+      top: 75%; /* Adjust the vertical positioning */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: lightgrey;
+      color: black;
+      padding: 8px 16px; /* Decrease the button size */
+      font-size: 1rem; /* Decrease the font size */
+      border: none;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .penshoppe {
+        font-size: 0.9rem;
+        padding: 1% 0;
+        text-align: left; /* Center align the text on mobile */
+        left: 20%; /* Remove right positioning */
+        top: 1%; /* Adjust vertical positioning */
+      }
+
+      .image-container img {
+        content: url("per3.jpg"); /* Replace per1 with per3 specifically for mobile */
+        height: 500%; /* Adjust the height of the image for mobile */
+      }
+
+      .shop-now-button {
+        top: 76%; /* Adjust the vertical positioning */
+        padding: 4px 11px; /* Decrease the button size */
+        font-size: 0.7rem; /* Decrease the font size */
+      }
+
+      .top-banner {
+        padding: 3px 0;
+      }
+
+      .banner-text {
+        font-size: 0.6rem;
+        text-align: center;
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
+  <script src="supersonic.js"></script>
+</head>
+<body>
+  <div class="top-banner">
+    <span class="banner-text">ANY 3 FOR ONLY <span class="currency">P</span>999</span>
+  </div>
+
+  <div class="image-container">
+    <img src="per1.jpg" alt="Per1 Image">
+    <div class="penshoppe">Penshoppe</div>
+    <button class="shop-now-button">SHOP NOW</button>
+  </div>
+
+  <!-- Rest of your website content goes here -->
+  <div style="height: 2000px;"></div>
+</body>
+</html>
